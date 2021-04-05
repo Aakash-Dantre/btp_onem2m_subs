@@ -1,0 +1,13 @@
+hello sir,
+we have implmented the server in django, which is storing contianers instances into postgress db
+
+but django is taking more time as compared to http-server for some dummy request
+
+django takes around 4 sec per 50 requests
+http-server takes around 0.2 sec per 50 requests
+
+Although when request are send through onem2m subscription, it takes 5 sec for both, as the process is bottlenecked by container creation.
+
+
+
+how should we proceed furthur on this?

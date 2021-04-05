@@ -1,0 +1,60 @@
+
+create db in postgress
+- login to your database
+- create all 3 tables from prev queries(see whatsapp)
+
+	create table water2(
+	id SERIAL PRIMARY KEY,
+	level varchar(20),
+	nodename varchar(20),
+	container_instance varchar(20)
+	);
+
+	create table air2(
+	id SERIAL PRIMARY KEY,
+	timestamp varchar(20),
+	pm25 varchar(20),
+	pm10 varchar(20),
+	temperature varchar(20),
+	humidity varchar(20),
+	co varchar(20),
+	nh2 varchar(20),
+	nh3 varchar(20),
+	aqi varchar(20),
+	aql varchar(20),
+	aqimp varchar(20),
+	datainterval varchar(20),
+	nodename varchar(20),
+	container_instance varchar(20)
+	);
+
+	create table wind2(
+	id SERIAL PRIMARY KEY,
+	timestamp varchar(20),
+	solarradiation varchar(20),
+	temperature varchar(20),
+	relativehumidity varchar(20),
+	winddirection varchar(20),
+	windspeed varchar(20),
+	gustspeed varchar(20),
+	dewpoint varchar(20),
+	batterydcvoltage varchar(20),
+	rain varchar(20),
+	pressure varchar(20),
+	nodename varchar(20),
+	container_instance varchar(20)
+	);
+
+
+enter your postgres initials(values)
+- open mysite/settings.py
+- line 76, change name password etc
+
+run server
+- cd mysite
+- python3 manage.py runserver
+
+run ae.py
+- python3 ae.py
+
+check datacontainers in postgres
